@@ -1,0 +1,15 @@
+{
+  "name": "expressserver",
+  "version": "1.0.0",
+  "description": "express http server app",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gareth thomas",
+  "license": "ISC"
+}
