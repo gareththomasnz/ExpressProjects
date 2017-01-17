@@ -3,7 +3,17 @@ extends layout
 block content
           h1
           | Contact Us
-          p
-            | Our Contact details
-          p
+          form(method='post', action='contact/send')
+                h2.form-signin-heading Enter Contact details
+                .form-group
+                label Name
+                input.form-control(type='text', placeholder='Your Name', required='', autofocus='')
+                .form-group
+                label Email
+                input.form-control(type='email', placeholder='Email address', required='', autofocus='')
+                .form-group
+                label Message
+                textarea.form-control(type='text', placeholder='Your Message', required='')
+                .form-group
+                button.btn.btn-lg.btn-primary.btn-block(type='submit') SEND
    
