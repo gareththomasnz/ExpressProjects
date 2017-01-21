@@ -1,5 +1,61 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header.intro-header(style="background-image: url('img/home-bg.jpg')")
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+          .site-heading
+            h1 Sports Blog
+            hr.small
+            span.subheading The Number One Sports Blog Online
+  // Main Content
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        .post-preview
+          a(href='post.html')
+            h2.post-title
+              | Saturday Superbowl Action - up close and personal with the best in the game
+            h3.post-subtitle
+              | Problems look mighty small even up close
+          p.post-meta
+            | Posted by 
+            a(href='#') Start Bootstrap
+            |  on September 24, 2014
+        hr
+        .post-preview
+          a(href='post.html')
+            h2.post-title
+              | Modern Olympic Athletes discuss steroid use in preparation and potentially competition.
+          p.post-meta
+            | Posted by 
+            a(href='#') Start Bootstrap
+            |  on September 18, 2014
+        hr
+        .post-preview
+          a(href='post.html')
+            h2.post-title
+              | Too many accidents and injuries this season push one seasoned tennis pro over the edge
+            h3.post-subtitle
+              | Too many accidents and injuries this season
+          p.post-meta
+            | Posted by 
+            a(href='#') Start Bootstrap
+            |  on August 24, 2014
+        hr
+        .post-preview
+          a(href='post.html')
+            h2.post-title
+              | Failure is not an option
+            h3.post-subtitle
+              | The worlds best sharp shooter reveals his mental training strategy.
+          p.post-meta
+            | Posted by 
+            a(href='#') Start Bootstrap
+            |  on July 8, 2014
+        hr
+        // Pager
+        ul.pager
+          li.next
+            a(href='#') Older Posts →

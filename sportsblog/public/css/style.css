@@ -3,6 +3,11 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+
+.navbar{
+  background:#000 !important;
+}
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
@@ -56,6 +61,7 @@ hr.small {
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
+  background-color: black;
 }
 .navbar-custom .navbar-header .navbar-toggle {
   color: #777777;
