@@ -10,7 +10,7 @@ var flash = require('connect-flash');
 
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/sportsblog');
+mongoose.connect('mongodb://127.0.0.1/sportsblog');
 var db = mongoose.connection;
 
 var index = require('./routes/index');
