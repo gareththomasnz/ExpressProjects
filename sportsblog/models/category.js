@@ -18,7 +18,7 @@ var Category = module.exports = mongoose.model('Category', categorySchema);
 
 // Get Categories
 module.exports.getCategories = function(callback, limit){
-	Category.find(callback, { sort: 'name'}).limit(limit);
+	Category.find(callback, { sort: 'title'}).limit(limit);
 }
 
 
