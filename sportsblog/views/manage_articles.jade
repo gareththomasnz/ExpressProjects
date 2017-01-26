@@ -12,13 +12,15 @@ block content
     table(class='table table-striped')
      tr
       th Article Title
+      th Article Category
       th Date Published
       th Author
       th
      each article, i in articles
       tr
        td #{article.title}
-       td #{moment(article.created_at).format('MMMM Do YYYY, h:mm:ss a')}
+       td #{article.category}
+       td #{article.created_at}
        td #{article.author}
        td 
         a(class="btn btn-tiny btn-default" href="/manage/articles/edit/#{article._id}") Edit

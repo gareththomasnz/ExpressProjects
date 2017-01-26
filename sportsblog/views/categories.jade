@@ -1,13 +1,21 @@
 extends layout
 
 block content
- .spacer
+  header.intro-header(style="background-image: url('img/home-bg.jpg')")
     .container
       .row
         .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-          h1= title
-          br
-          ul(class="list-group")
-           each category, i in categories
-              li(class='list-group-item')
-                  a(href='/articles/category/#{category.id}') #{category.title}
+          .site-heading
+            h1 Sports Blog
+            hr.small
+            span.subheading The Number One Sports Blog Online
+  // Main Content
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        h1= title
+        br
+        ul(class="list-group")
+         each category, i in categories
+            li(class='list-group-item')
+                a(href='/articles/category/#{category.id}') #{category.title}
