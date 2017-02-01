@@ -8,6 +8,12 @@
 
 <body>
 
+{{{messages}}}
+{{#if errors}}
+    {{each errors}}
+        {{msg}}
+    {{/each}}
+{{/if}}
 {{{body}}}
 
 </body>
