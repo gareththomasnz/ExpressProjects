@@ -21,6 +21,15 @@ $(document).ready(function(){
                         });
                 });
         
+        chatForm.submit(function(){
+                e.preventDefault();
+                socket.emit('send message', message.val());
+                });
+        
+        socket.on('show message', function(){
+                chatWindow.append('<strong>'+data.user+'</strong>:' +data.msg+ '<br>');
+                });
+        
         socket.on('users', function(data){
                 var html = '';
                 for(i=0; i < data.length; i++){

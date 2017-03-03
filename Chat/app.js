@@ -25,6 +25,16 @@ io.sockets.on('connection', function(socket){
         function updateUsers(){
                io.sockets.emit('users', users); 
         }
+        
+        socket.on('send message', function(){
+                io.sockets.emit('show message', {msg: data, user: username});
+                });
+        
+        socket.on('disconnect', function(data){
+                if(!socket.username) return;
+                users.splice(users.indexOf(socket.username), 1);
+                updateUsers();
+                });
         });
 
 app.get('/', function(req, res){
